@@ -63,9 +63,6 @@ p {
   background-color: hsl(154, 59%, 51%);
 }
 
-.d.button {
-  cursor: pointer;
-}
 
 input[type="text"],
 input[type="password"] {
