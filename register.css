@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  font-size: 16px;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "a c";
+  gap: 10px;
+  width: 80%;
+  margin: auto;
+}
+
+main div {
+  padding: 20px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: white;
+  font-weight: 700;
+}
+
+p {
+  color: white;
+  font-size: 16px;
+}
+
+.a {
+  text-align: left;
+  grid-area: a;
+  background-color: none;
+}
+
+.b {
+  text-align: center;
+  grid-area: b;
+  background-color: hsl(248, 32%, 49%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.c {
+  text-align: left;
+  grid-area: c;
+  background-color: white;
+}
+
+.d {
+  text-align: center;
+  background-color: hsl(154, 59%, 51%);
+}
+
+.d.button {
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
